@@ -31,3 +31,7 @@ docker -v
 # verify that current user can run docker compose commands without sudo
 docker compose version
 
+# change docker.sock permission
+sudo chown root:docker /var/run/docker.sock
+sudo chmod 666 /var/run/docker.sock
+
